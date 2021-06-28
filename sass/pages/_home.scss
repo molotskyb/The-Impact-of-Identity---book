@@ -1,0 +1,76 @@
+.section-about {
+	background-color: $color-grey-light-1;
+	padding: 25rem 0;
+	margin-top: -25vh;
+
+	@include respond(tab-port) {
+		padding: 20rem 0;
+	}
+
+	&__logo-box {
+		text-align: center;
+		margin-bottom: 8rem;
+
+		@include respond(tab-port) {
+			width: 100%;
+			margin-bottom: 6rem;
+		}
+
+		@include respond(phone) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__logo {
+		width: 55rem;
+		height: auto;
+
+		@include respond(phone) {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.section-review {
+	padding: 20rem 0;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light-2, 0.8),
+			rgba($color-primary-dark-2, 0.8)
+		),
+		url(../img/bookPhoto-2.jpeg);
+	background-size: cover;
+	transform: skewY(-7deg);
+	margin-top: -12vh;
+
+	& > * {
+		transform: skewY(7deg);
+	}
+
+	@include respond(tab-port) {
+		padding: 10rem 0;
+	}
+}
+
+.section-author {
+	background-color: $color-grey-light-1;
+	// position: relative;
+	padding: 25rem 0;
+	margin-top: -25vh;
+
+	@include respond(tab-port) {
+		padding: 10rem 0;
+	}
+}
+
+.section-video {
+	background-color: $color-grey-light-1;
+	padding: 8rem 0;
+
+	margin-top: -15vh;
+
+	@include respond(tab-port) {
+		padding: 10rem 0;
+	}
+}

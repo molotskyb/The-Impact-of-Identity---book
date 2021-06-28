@@ -1,0 +1,131 @@
+body {
+	font-family: $default-font-family;
+	font-family: 400;
+	font-size: $default-font-size;
+	line-height: 1.4;
+	color: $color-grey;
+	padding: 2rem;
+}
+
+.heading-primary {
+	color: $color-black;
+	backface-visibility: hidden;
+	margin-top: 4rem;
+	margin-bottom: 50px;
+
+	&--main-1 {
+		display: block;
+		font-size: 4rem;
+		font-weight: 400;
+		color: $color-grey;
+		animation: moveInRight 1s ease-in-out 0.1s;
+	}
+
+	&--main-2 {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+
+		animation-name: moveInLeft;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 0.1s;
+	}
+
+	&--main-3 {
+		display: block;
+		font-size: 4rem;
+		font-weight: 400;
+		color: $color-grey;
+		animation: moveInLeft 1s ease-in-out 0.1s;
+	}
+
+	&--main-4 {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		color: $color-dark-red;
+
+		animation: moveInRight 1s ease-in-out 0.1s;
+	}
+
+	&--linepic {
+		display: block;
+		height: 3rem;
+	}
+
+	&--sub {
+		display: block;
+		font-size: 3rem;
+		font-weight: 400;
+		color: $color-grey;
+		text-transform: uppercase;
+		font-family: $font-family-2;
+		margin-bottom: 2.5rem;
+		animation: moveInLeft 1s ease-in-out 0.1s;
+	}
+
+	&--author {
+		display: block;
+		font-size: 3rem;
+		font-weight: 700;
+		letter-spacing: 0.7rem;
+		color: $color-black;
+		animation: moveInRight 1s ease-in-out 0.1s;
+	}
+}
+
+.heading-secondary {
+	font-family: $default-font-family;
+	font-size: 3.5rem;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(
+		to right,
+		$color-primary-light-2,
+		$color-primary-dark-2
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	letter-spacing: 0.4rem;
+
+	@include respond(tab-port) {
+		font-size: 3rem;
+	}
+
+	@include respond(phone) {
+		font-size: 2.5rem;
+	}
+}
+
+.heading-tertiary {
+	font-family: $font-family-2;
+	color: $color-dark-gold;
+	// color: $color-light-red;
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-family: $font-family-2;
+	font-size: $default-font-size;
+	word-spacing: 0.3rem;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
+.story {
+	font-family: $font-family-2;
+
+	&__text {
+		word-spacing: 0.3rem;
+	}
+}
+
+.footer__copyright {
+	font-family: $font-family-2;
+}
