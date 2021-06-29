@@ -2,7 +2,7 @@
 	"name": "impactofidentity",
 	"version": "1.0.0",
 	"description": "Loading page for impact of identity book",
-	"main": "index.js",
+	"default": "index.html",
 	"scripts": {
 		"watch:sass": "node-sass sass/main.scss css/style.css -w",
 		"devserver": "live-server",
